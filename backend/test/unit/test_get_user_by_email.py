@@ -123,7 +123,6 @@ class TestGetUserByEmailException:
     """
     
     @pytest.fixture
-    @patch("src.controllers.usercontroller.re.fullmatch")
     def sut(self):
 
         mockedDAO = mock.MagicMock()
