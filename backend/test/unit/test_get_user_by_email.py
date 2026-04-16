@@ -113,7 +113,6 @@ class TestGetUserByEmail2:
             reMock.return_value = True
             result = sut.get_user_by_email("jane@jane.com")
             captured = capsys.readouterr()
-            # assert captured.out == 'Error: more than one user found with mail jane@jane.com'
             assert len(captured.out) > 0
 
 class TestGetUserByEmailException:
