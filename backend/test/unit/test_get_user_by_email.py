@@ -69,12 +69,12 @@ class TestGetUserByEmail2:
 
         assert result == {"id": 1, "name": "Jane", "email": "jane@jane.com"}
 
-    # @pytest.mark.unit
-    # def test_get_user_by_email2_print(self, sut):
+    @pytest.mark.unit
+    def test_get_user_by_email2_print(self, sut):
 
-    #     result = sut.get_user_by_email("jane@jane.com")
+        result = sut.get_user_by_email("jane@jane.com")
 
-    #     assert result == {"id": 1, "name": "Jane", "email": "jane@jane.com"}
+        assert result == {"id": 1, "name": "Jane", "email": "jane@jane.com"}
 
 class TestGetUserByEmailException:
     
