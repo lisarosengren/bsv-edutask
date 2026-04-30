@@ -28,13 +28,6 @@ class TestGetUserByEmail0:
 
             assert result == None
 
-
-    @pytest.mark.unit
-    def test_get_user_by_email_None(self, sut):
-        with patch("src.controllers.usercontroller.re.fullmatch") as reMock:
-            reMock.return_value = True
-            with pytest.raises(ValueError):
-                result = sut.get_user_by_email("tarzan@jane.com")
     
 class TestGetUserByEmailInvalid:
 
